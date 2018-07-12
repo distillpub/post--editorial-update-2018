@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 704 91" style="enable-background:new 0 0 704 91;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FF7A00;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FF7A00;}
+	.st2{font-family:'Helvetica-Bold';}
+	.st3{font-size:24px;}
+</style>
+<g>
+	<g>
+		<line class="st0" x1="63" y1="66.1" x2="225.8" y2="66.1"/>
+		<g>
+			<polygon class="st1" points="219.2,74.3 217.8,72.8 225.1,66.1 217.8,59.4 219.2,58 228,66.1 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st0" x1="260" y1="66" x2="422.8" y2="66"/>
+		<g>
+			<polygon class="st1" points="416.2,74.2 414.8,72.7 422.1,66 414.8,59.3 416.2,57.8 425,66 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st0" x1="453" y1="66" x2="615.8" y2="66"/>
+		<g>
+			<polygon class="st1" points="609.2,74.2 607.8,72.7 615.1,66 607.8,59.3 609.2,57.8 618,66 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 22.2876 49.1514)" class="st2 st3">Reading</text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 208.7158 25.1514)"><tspan x="0" y="0" class="st2 st3">Interactive</tspan><tspan x="6.7" y="30.9" class="st2 st3">diagrams</tspan></text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 401.7764 25.1514)"><tspan x="0" y="0" class="st2 st3">In-browser</tspan><tspan x="0.7" y="30.9" class="st2 st3">notebooks</tspan></text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 616.9824 25.1514)"><tspan x="0" y="0" class="st2 st3">New</tspan><tspan x="-47.4" y="30.9" class="st2 st3">Experiments</tspan></text>
+</g>
+<circle class="st1" cx="49.4" cy="66.1" r="6.2"/>
+<circle class="st1" cx="243.7" cy="66.1" r="6.2"/>
+<circle class="st1" cx="438" cy="66.1" r="6.2"/>
+<circle class="st1" cx="632.3" cy="66.1" r="6.2"/>
+</svg>
