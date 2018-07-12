@@ -4,6 +4,12 @@
   <script src="template.v2.js"></script>
   <style>
     .article-link { font-style: italic; }
+    .toc > ol {padding-left: 0;}
+    .toc ol ol {
+      margin-top: 1em;
+      padding-left: 20px;
+      list-style-type: lower-roman;
+    }
   </style>
 </head>
 <d-front-matter>
@@ -23,6 +29,33 @@
   </d-title>
 
 <d-article>
+  <div style="grid-column: kicker;" class="toc figcaption">
+    <p style="font-weight: bold; text-transform: uppercase;">Contents</b>
+      <ol>
+        <li><a href="#successes">Things that Worked Well</a>
+          <ol>
+            <li><a href="#interfaces">Interfaces for Ideas</a></li>
+            <li><a href="#engagement">Engagement as a Spectrum</a></li>
+            <li><a href="#best-practices">Software Engineering Best Practices for Scientific Publishing</a></li>
+          </ol>
+        </li>
+        <li><a href="#challenges">Challenges & Improvements</a>
+          <ol>
+            <li><a href="#prize">The Distill Prize</a></li>
+            <li><a href="#small-community">A Small Community</a></li>
+            <li><a href="#review-process">Review Process</a></li>
+          </ol>
+        </li>
+        <li><a href="#other-changes">Other Changes</a>
+          <ol>
+            <li><a href="#dual-submission">Dual Submission Policy</a></li>
+            <li><a href="#authors">Supporting Authors</a></li>
+            <li><a href="#team">Growing Distill's Team</a></li>
+            <li><a href="#scope">Growing Distill's Scope</a></li>
+          </ol>
+        </li>
+      </ol>
+  </div>
 
   <p>
     A little over a year ago, we formally launched Distill as an open-access scientific journal.
@@ -45,9 +78,9 @@
     <li>Grow the Distill editorial team and create a pathway to entering more fields. <a href="http://arvindsatya.com/">Arvind Satyanarayan</a> is joining the editorial team to oversee an HCI + AI portfolio.</li>
   </ul>
 
-  <h2>Things that Worked Well</h2>
+  <h2 id="successes">Things that Worked Well</h2>
 
-  <h3>Interfaces for Ideas</h3>
+  <h3 id="interfaces">Interfaces for Ideas</h3>
 
   <p>It’s tempting to think of explanations as a layer of polish on top of ideas. We believe that the best explanations are often something much deeper: they are interfaces to ideas, a way of thinking and interacting with a concept. Building on this, we’ve seen several Distill articles create visualizations that reify those ways of thinking and interacting with ideas.</p>
 
@@ -63,7 +96,7 @@
 
   <p>This kind of interface design and this line of thinking isn’t new to Distill, but we’ve been able to help push it forward over the last year, and we’re excited to see where it will go.</p>
 
-  <h3>Engagement as a Spectrum</h3>
+  <h3 id="engagement">Engagement as a Spectrum</h3>
 
   <p>One thing we’ve found particularly exciting is how articles can make engaging deeply with ideas an easier and smoother process. Normally, there’s a huge jump from reading a paper to testing and building on it. But we’re starting to see papers where engagement is a continuous spectrum:</p>
 
@@ -81,21 +114,21 @@
 
   <p>Reproducibility has long been recognized as a critical component of maintaining scientific hygiene, and authors have increasingly taken to open sourcing their contributions and even putting intermediary artifacts (e.g., data analysis scripts) on GitHub. In-browser notebooks allow authors to go one step further, engaging in what we call “active reproducibility”: not merely making it <em>technically possible</em> to reproduce their work, but making it convenient to do so. We hope to see more authors invest effort in this regard.</p>
 
-  <h3>Software Engineering Best Practices for Scientific Publishing</h3>
+  <h3 id="best-practices">Software Engineering Best Practices for Scientific Publishing</h3>
 
   <p>Over the past year, we’ve also seen several advantages to using software engineering best practices to operate a scientific journal. Every Distill article is housed within a GitHub repository, and peer review is conducted through the issue tracker. We’ve found this setup gives readers greater transparency into the publication process. For instance, readers can see how Gabriel Goh’s momentum article <a href="https://github.com/distillpub/post--momentum/compare/95506b079372cee3aa7fbc9bd29ee078aaff12e7...bf84bcf41f019658096c0130b9695b6422fe2766">has been updated</a> from when it was first published, step through <a href="https://github.com/distillpub/post--momentum/commits/master?after=bf84bcf41f019658096c0130b9695b6422fe2766+209">early development</a> to see the genesis of the article’s ideas, and <a href="https://github.com/distillpub/post--momentum/issues/29">can read the back-and-forth</a> of the review process. More excitingly, we’ve seen readers engage in on-going, post-publication peer review including sending pull requests to <a href="https://github.com/distillpub/post--momentum/pull/40">fix typos</a>, making <a href="https://github.com/distillpub/post--momentum/pull/42">more</a> <a href="https://github.com/distillpub/post--momentum/pull/43">thorough</a> <a href="https://github.com/distillpub/post--momentum/pull/66">editing</a> <a href="https://github.com/distillpub/post--momentum/pull/67">passes</a>, and even sparked <a href="https://github.com/distillpub/post--momentum/issues/51">discussions with the author</a>.</p>
 
   <p>Authors also benefit from this setup as Distill provides continuous integration for publication. Prior to publication, draft articles are automatically built and served from password-protected URLs. Authors are free to share these addresses to solicit initial feedback, and can be confident that their readers will always see the most up-to-date version of the draft.</p>
 
-  <h2>Challenges & Improvements</h2>
+  <h2 id="challenges">Challenges & Improvements</h2>
 
-  <h3>The Distill Prize</h3>
+  <h3 id="prize">The Distill Prize</h3>
 
   <p>We have, unfortunately, not yet awarded the 2018 Distill prize. We received 59 submissions, several of which were lecture series consisting of many hours of content. We did not anticipate content of this kind and did not (and do not) have a good process in place for evaluating it. Part of the issue has been about being a perfectionist in our evaluation of the content. In the future, we aim to better balance this with expeditious review. </p>
 
   <p>We endeavor to award the Distill prize by the end of Summer 2018, and to conduct the process in a more timely fashion moving forward.</p>
 
-  <h3>A Small Community</h3>
+  <h3 id="small-community">A Small Community</h3>
 
   <p>Distill aims to cultivate a new style of scientific communication and build an ecosystem to support it. We hope to grow this community over time but, for the moment, we have a relatively small pool of potential authors and editors compared to more traditional academic venues. </p>
 
@@ -109,7 +142,7 @@
 
   <ul><li>In the event of a conflict of interest, Distill editors will select a member of the research community to serve as a temporary “acting editor” for an article. The acting editor should be a member of the relevant research community, and at arm’s length to the authors. The use and identity of an acting editor will be noted in the review process log, and made public if the article is published.</li></ul>
 
-  <h3>Review Process</h3>
+  <h3 id="review-process">Review Process</h3>
 
   <p>When we started Distill, we adopted a pretty radical review process. We knew that most researchers didn’t have the full skill set -- especially the design skills -- needed to write the kind of articles Distill aspires to. For that reason, we provided extensive mentorship and assistance to help them improve articles.</p>
 
@@ -133,9 +166,9 @@
 
   <p>We’re also interested in finding ways to support communication of early-stage research results. We’re concerned that our current expectations may incentivize authors to not share results until they have reached a high level of maturity, and this may not be the best thing for the field. We’re not implementing any policy changes at the moment, but are actively considering options. Please reach out if you have ideas you’d like us to consider!</p>
 
-  <h2>Other Changes</h2>
+  <h2 id="other-changes">Other Changes</h2>
 
-  <h3>Dual Submission Policy</h3>
+  <h3 id="dual-submission">Dual Submission Policy</h3>
 
   <p>In order for Distill to be effective in legitimizing non-traditional publishing, it must be perceived as a primary academic publication. This means it’s important for Distill to follow typical “dual publication” norms. It’s also important for us to avoid the perception that Distill is an “accompanying blog post” for something like an ArXiv paper.</p>
 
@@ -151,7 +184,7 @@
     <li><b>High-Profile Informal Publication:</b> We see this as being very similar to publication in a workshop or conference, and have the same expectations as above.</li>
   </ul>
 
-  <h3>Supporting Authors</h3>
+  <h3 id="authors">Supporting Authors</h3>
 
   <p>Over the last year, we’ve put a lot of energy into mentoring individuals on writing Distill articles. This has often involved editors volunteering tens of hours of mentorship, per submitted article. While this has been rewarding, it isn’t scalable.</p>
 
@@ -167,7 +200,7 @@
     <li>Starting a <a href="https://join.slack.com/t/distillpub/shared_invite/enQtMzg1NzU3MzEzMTg3LWJkNmQ4Y2JlNjJkNDlhYTU2ZmQxMGFkM2NiMTI2NGVjNzJkOTdjNTFiOGZmNDBjNTEzZGUwM2U0Mzg4NDAyN2E">Distill Community Slack team</a> where people can seek advice, mentorship, and co-authors. </li>
   </ul>
 
-  <h3>Growing Distill's Team</h3>
+  <h3 id="team">Growing Distill's Team</h3>
 
   <p>We believe that growing Distill’s editorial team is one of the most important ingredients for its long-term success. Growing the circle of people involved in Distill’s day-to-day operations makes it more robust, better able to scale, and reduces conflict of interest issues.</p>
 
@@ -183,7 +216,7 @@
 
   <p>As a first step in this direction, we’re pleased that <a href="http://arvindsatya.com">Arvind Satyanarayan</a> has joined the Distill editorial team. Arvind comes from the data visualization and human-computer interaction (HCI) communities and will initially focus on articles at the intersection of these fields with machine learning. If Distill finds the right additional editor, we would be happy to expand our coverage of HCI more broadly.  </p>
 
-  <h3>Growing Distill's Scope</h3>
+  <h3 id="scope">Growing Distill's Scope</h3>
 
   <p>In the long-run, we believe Distill should be open to expanding to other disciplines, with new editors taking on different topic portfolios.</p>
 
