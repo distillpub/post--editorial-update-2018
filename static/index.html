@@ -10,6 +10,32 @@
       padding-left: 20px;
       list-style-type: lower-roman;
     }
+    .toc li {
+      margin-bottom: .5em;
+    }
+    d-article h2 {
+      margin-top: 0;
+    }
+    a.figure-number::before {
+      content: "Figure ";
+    }
+    a.section-number::before {
+      content: "Section ";
+    }
+    a.figure-number,
+    a.section-number {
+      border-bottom-color: hsla(206, 90%, 20%, 0.3);
+      text-transform: uppercase;
+      font-size: .85em;
+      color: hsla(206, 90%, 20%, 0.7);
+    }
+
+    a.figure-number:hover,
+    a.section-number:hover {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: hsla(206, 90%, 20%, 0.7);
+    }
   </style>
 </head>
 <d-front-matter>
@@ -56,28 +82,34 @@
         </li>
       </ol>
   </div>
+  
+  <div id="abstract">
+    <p>
+      A little over a year ago, we formally launched Distill as an open-access scientific journal.
+    </p>
 
-  <p>
-    A little over a year ago, we formally launched Distill as an open-access scientific journal.
-  </p>
+    <p>
+      It’s been an exciting ride since then! To give some very concrete metrics, Distill has had almost a million unique readers, and more than 2.7 million views. Distill has also reached an impact factor of 23<d-footnote>We measure this by <a href="https://www.google.com/url?q=https://scholar.google.com/scholar?q%3Dsite%253Adistill.pub&sa=D&ust=1531418430046000&usg=AFQjCNEQJlGiVmOIx5BAiIutl-svxO7d1Q">Google Scholar citations.</a> This would place us in the top 2% of academic journals by that metric. That said, this is a somewhat unfair comparison given Distill's smaller size.</d-footnote>. More importantly, we've published several new papers with a strong emphasis on clarity and reproducibility, which we think is helping to encourage a new style of scientific communication.
+    </p>
 
-  <p>
-    It’s been an exciting ride since then! To give some very concrete metrics, Distill has had almost a million unique readers, and more than 2.7 million views. Distill has also reached an impact factor of 23<d-footenote>We measure this by <a href="https://www.google.com/url?q=https://scholar.google.com/scholar?q%3Dsite%253Adistill.pub&sa=D&ust=1531418430046000&usg=AFQjCNEQJlGiVmOIx5BAiIutl-svxO7d1Q">Google Scholar citations.</a> This would place us in the top 2% of academic journals by that metric. That said, this is a somewhat unfair comparison given Distill's smaller size.</d-footenote>. More importantly, we've published several new papers with a strong emphasis on clarity and reproducibility, which we think is helping to encourage a new style of scientific communication.
-  </p>
+    <p>
+      Despite all of this, there are a couple ways we think we’ve fallen short or could be doing better. To that end, we’ve been reflecting a lot on what we could do better. In particular, we plan to make the following changes:
+    </p>
 
-  <p>
-    Despite all of this, there are a couple ways we think we’ve fallen short or could be doing better. To that end, we’ve been reflecting a lot on what we could do better. In particular, we plan to make the following changes:
-  </p>
-
-  <ul>
-    <li>Separate mentoring from evaluating articles.</li>
-    <li>Clarify and streamline the Distill review process, including a new <a href="https://docs.google.com/document/d/16BNLdSmoUc1zqydECJ8trYkVNDnKVlxT57EEXhCxWSc/edit#">reviewer worksheet</a>.</li>
-    <li>Prioritize creating resources to help everyone over mentoring individuals, starting with the creation of a <a href="https://join.slack.com/t/distillpub/shared_invite/enQtMzg1NzU3MzEzMTg3LWJkNmQ4Y2JlNjJkNDlhYTU2ZmQxMGFkM2NiMTI2NGVjNzJkOTdjNTFiOGZmNDBjNTEzZGUwM2U0Mzg4NDAyN2E">Slack workspace</a>.</li>
-    <li>Simplify process for bringing in acting editors to resolve conflicts of interest.</li>
-    <li>Clarify our policy about dual submissions.</li>
-    <li>Grow the Distill editorial team and create a pathway to entering more fields. <a href="http://arvindsatya.com/">Arvind Satyanarayan</a> is joining the editorial team to oversee an HCI + AI portfolio.</li>
-  </ul>
-
+    <ul>
+      <li>Separate mentoring from evaluating articles.</li>
+      <li>Clarify and streamline the Distill review process, including a new <a href="https://docs.google.com/document/d/16BNLdSmoUc1zqydECJ8trYkVNDnKVlxT57EEXhCxWSc/edit#">reviewer worksheet</a>.</li>
+      <li>Prioritize creating resources to help everyone over mentoring individuals, starting with the creation of a <a href="https://join.slack.com/t/distillpub/shared_invite/enQtMzg1NzU3MzEzMTg3LWJkNmQ4Y2JlNjJkNDlhYTU2ZmQxMGFkM2NiMTI2NGVjNzJkOTdjNTFiOGZmNDBjNTEzZGUwM2U0Mzg4NDAyN2E">Slack workspace</a>.</li>
+      <li>Simplify process for bringing in acting editors to resolve conflicts of interest.</li>
+      <li>Clarify our policy about dual submissions.</li>
+      <li>Grow the Distill editorial team and create a pathway to entering more fields. <a href="http://arvindsatya.com/">Arvind Satyanarayan</a> is joining the editorial team to oversee an HCI + AI portfolio.</li>
+    </ul>
+  </div>
+  
+  <hr>
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="section-number" href="#successes">1</a>
+  </span>
   <h2 id="successes">Things that Worked Well</h2>
 
   <h3 id="interfaces">Interfaces for Ideas</h3>
@@ -87,8 +119,11 @@
   <p>One of the articles that best exemplifies this type of contribution is Gabriel Goh’s <a href="http://distill.pub/2017/momentum" class="article-link">Why Momentum Really Works</a>. Gabe, and other optimization researchers, have a perspective on this problem that may be unfamiliar to practitioners. It involves a mathematical formalism of the spectrum of eigenvalues of the optimization problem, as well as a more informal way of interpreting and thinking about them. In our opinion, traditional academic publications don’t emphasize articulating the intuition that accompanies technical ideas -- the kind that teachers share with students at whiteboards.</p>
 
   <p>In contrast, this diagram, taken from the article, not only conveys the formalism but also shares some of the author’s intuition. Bolstered by the interactivity, it invites readers to step into a way of thinking. Perhaps most interestingly, by reifying a mental model into a computationally-driven interface, the author discovered places where their thinking was incomplete -- specifically, introducing momentum flattens the spectrum of eigenvalues in surprising ways.</p>
-
-  <figure>
+  
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="figure-number" href="#figure-momentum">1</a>
+  </span>
+  <figure id="figure-momentum">
     <video controls autoplay loop style="width: 100%;">
       <source src="momentum_flattening.mp4" type="video/mp4">
     </video>
@@ -99,14 +134,20 @@
   <h3 id="engagement">Engagement as a Spectrum</h3>
 
   <p>One thing we’ve found particularly exciting is how articles can make engaging deeply with ideas an easier and smoother process. Normally, there’s a huge jump from reading a paper to testing and building on it. But we’re starting to see papers where engagement is a continuous spectrum:</p>
-
-  <figure>
+  
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="figure-number" href="#figure-continuum">2</a>
+  </span>
+  <figure id="figure-continuum">
     <img src="continuum.svg" alt="Reading &harr; Interactive Diagrams &harr; In-browser Notebooks &harr; New Experiments" />
   </figure>
 
   <p>The strongest example of this so far has been in the <a href="https://distill.pub/2018/building-blocks" class="article-link">Building Blocks of Interpretability</a>, where important ideas are not only accompanied by interactive diagrams, but then also by a notebook that can reproduce that diagram.</p>
-
-  <figure>
+  
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="figure-number" href="#figure-spectrum">2</a>
+  </span>
+  <figure id="figure-spectrum">
     <img src="spectrum2.png" alt="" />
   </figure>
 
@@ -119,14 +160,18 @@
   <p>Over the past year, we’ve also seen several advantages to using software engineering best practices to operate a scientific journal. Every Distill article is housed within a GitHub repository, and peer review is conducted through the issue tracker. We’ve found this setup gives readers greater transparency into the publication process. For instance, readers can see how Gabriel Goh’s momentum article <a href="https://github.com/distillpub/post--momentum/compare/95506b079372cee3aa7fbc9bd29ee078aaff12e7...bf84bcf41f019658096c0130b9695b6422fe2766">has been updated</a> from when it was first published, step through <a href="https://github.com/distillpub/post--momentum/commits/master?after=bf84bcf41f019658096c0130b9695b6422fe2766+209">early development</a> to see the genesis of the article’s ideas, and <a href="https://github.com/distillpub/post--momentum/issues/29">can read the back-and-forth</a> of the review process. More excitingly, we’ve seen readers engage in on-going, post-publication peer review including sending pull requests to <a href="https://github.com/distillpub/post--momentum/pull/40">fix typos</a>, making <a href="https://github.com/distillpub/post--momentum/pull/42">more</a> <a href="https://github.com/distillpub/post--momentum/pull/43">thorough</a> <a href="https://github.com/distillpub/post--momentum/pull/66">editing</a> <a href="https://github.com/distillpub/post--momentum/pull/67">passes</a>, and even sparked <a href="https://github.com/distillpub/post--momentum/issues/51">discussions with the author</a>.</p>
 
   <p>Authors also benefit from this setup as Distill provides continuous integration for publication. Prior to publication, draft articles are automatically built and served from password-protected URLs. Authors are free to share these addresses to solicit initial feedback, and can be confident that their readers will always see the most up-to-date version of the draft.</p>
-
+  
+  <hr>
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="section-number" href="#challenges">2</a>
+  </span>
   <h2 id="challenges">Challenges & Improvements</h2>
 
   <h3 id="prize">The Distill Prize</h3>
 
   <p>We have, unfortunately, not yet awarded the 2018 Distill prize. We received 59 submissions, several of which were lecture series consisting of many hours of content. We did not anticipate content of this kind and did not (and do not) have a good process in place for evaluating it. Part of the issue has been about being a perfectionist in our evaluation of the content. In the future, we aim to better balance this with expeditious review. </p>
 
-  <p>We endeavor to award the Distill prize by the end of Summer 2018, and to conduct the process in a more timely fashion moving forward.</p>
+  <p>We endeavor to award the Distill prize by the end of summer 2018, and to conduct the process in a more timely fashion moving forward.</p>
 
   <h3 id="small-community">A Small Community</h3>
 
@@ -164,20 +209,25 @@
 
   <p>Part of Distill’s role is to enable authors to experiment and to provide a home for unusual types of academic artifacts. Formalizing our review process doesn’t change this; we are still open to submissions that our typical review process doesn’t anticipate, and will adapt our process if necessary. In particular, this year, we hope to increase the number of short articles focused on a narrow topic. </p>
 
-  <p>We’re also interested in finding ways to support communication of early-stage research results. We’re concerned that our current expectations may incentivize authors to not share results until they have reached a high level of maturity, and this may not be the best thing for the field. We’re not implementing any policy changes at the moment, but are actively considering options. Please reach out if you have ideas you’d like us to consider!</p>
-
+  <p>We’re also interested in finding ways to support communication of early-stage research results. We’re concerned that our current expectations may incentivize authors to not share results until they have reached a high level of maturity, and this may not be the best thing for the field. We’re not implementing any policy changes at the moment, but are actively considering options. <a href="mailto:editors@distill.pub">Please reach out</a> if you have ideas you’d like us to consider!</p>
+  
+  
+  <hr>
+  <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
+    <a class="section-number" href="#other-changes">3</a>
+  </span>
   <h2 id="other-changes">Other Changes</h2>
 
   <h3 id="dual-submission">Dual Submission Policy</h3>
 
-  <p>In order for Distill to be effective in legitimizing non-traditional publishing, it must be perceived as a primary academic publication. This means it’s important for Distill to follow typical “dual publication” norms. It’s also important for us to avoid the perception that Distill is an “accompanying blog post” for something like an ArXiv paper.</p>
+  <p>In order for Distill to be effective in legitimizing non-traditional publishing, it must be perceived as a primary academic publication. This means it’s important for Distill to follow typical “dual publication” norms. It’s also important for us to avoid the perception that Distill is an “accompanying blog post” for something like an arXiv paper.</p>
 
   <p>The result is that Distill can only consider articles that are substantially different from those formally published elsewhere, and is cautious of articles informally published elsewhere. Below we provide guidance for particular cases:</p>
 
   <ul>
     <li><b>No Prior Publication / Low-Profile Informal Publication:</b> No concerns! </li>
 
-    <li><b>ArXiv Paper:</b> We completely understand that researchers sometimes need to quickly get results out, and ArXiv is a great vehicle for doing so. We’re happy to publish your paper as long as there’s a clear understanding that Distill is the formal publication. The Distill paper will almost certainly be more developed anyways. :)</li>
+    <li><b>ArXiv Paper:</b> We completely understand that researchers sometimes need to quickly get results out, and arXiv is a great vehicle for doing so. We’re happy to publish your paper as long as there’s a clear understanding that Distill is the formal publication. The Distill paper will almost certainly be more developed anyways. :)</li>
 
     <li><b>Previous Workshop / Conference Papers:</b> Distill is happy to publish more developed and polished “journal versions” of papers. (This is a normal pattern in scientific publishing, although less common in Machine Learning.) These must substantively advance on the previous publications, through some combination of improving exposition, better surfacing of underlying insights and ways of thinking, consolidating a sequence of papers, or expanding with better experiments.</li>
 
@@ -227,7 +277,7 @@
   <p>In considering editors for new topics, Distill will have the same expectations we have for all editors (described above) with two modifications:</p>
 
   <ul>
-    <li>Although Distill does not normally review papers outside its existing topic portfolio, we will make an exception to review papers from potential editorial candidates. The existing editorial team would evaluate exposition while soliciting a third party editor to help us evaluate scientific merit, following Distill’s regular review process. Because this type of review is especially difficult and expensive, we will only move forward if the submission appears plausibly to be very strong article. </li>
+    <li>Although Distill does not normally review papers outside its existing topic portfolio, we will make an exception to review papers from potential editorial candidates. The existing editorial team would evaluate exposition while soliciting a third party editor to help us evaluate scientific merit, following Distill’s regular review process. Because this type of review is especially difficult and expensive, we will only move forward if the submission plausibly appears to be a very strong article. </li>
 
     <li>A second editor who can share responsibility for the topics you are taking on. This can either be an existing editor expanding to another topic, or someone applying along with you. Having a second editor is important so that editors have someone to talk over difficult cases with, and so that there isn’t a single point of failure.</li>
   </ul>
@@ -240,7 +290,7 @@
 
 <d-appendix></d-appendix>
 
-<d-bibliography src="bibliography.bib"></d-bibliography>
+<!-- <d-bibliography src="bibliography.bib"></d-bibliography> -->
 
 <script src="index.bundle.js"></script>
 
