@@ -4,7 +4,7 @@
   <script src="template.v2.js"></script>
   <style>
     .article-link { font-style: italic; }
-    .toc > ol {padding-left: 0;}
+    /* .toc > ol {padding-left: 0;}
     .toc ol ol {
       margin-top: 1em;
       padding-left: 20px;
@@ -12,6 +12,46 @@
     }
     .toc li {
       margin-bottom: .5em;
+    } */
+    .toc-wrapper {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+    .toc {
+      grid-column: text;
+      display: grid;
+      grid-gap: inherit;
+      list-style: none;
+      padding-left: 0;
+    }
+    @media (min-width: 768px) {
+      .toc {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .toc h4 {
+        margin-top: 0;
+      }
+    }
+    .toc > div {
+      /* display: grid; */
+    }
+    .toc a {
+      color: rgba(0,0,0,0.8);
+      border-bottom: none;
+    }
+    .toc ul {
+      margin-bottom: 0;
+    }
+    .toc li {
+      margin-bottom: 0.5em;
+    }
+    .toc h4 {
+      font-size: 13px;
+      margin-bottom: 0.5em;
+    }
+    d-article {
+      padding-top: 0;
     }
     d-article h2 {
       margin-top: 0;
@@ -43,44 +83,51 @@
   {
     "title":"Distill Update 2018",
     "description":"",
-    "authors":[
-    ]
+    "authors":[]
   }
   </script>
 </d-front-matter>
 
 <body>
   <d-title>
-    <h1>Distill Update 2018</h1>
+    <h1>Distill Editorial Update</h1>
   </d-title>
+  
+  <d-byline style="display: none;"></d-byline>
 
 <d-article>
-  <div style="grid-column: kicker;" class="toc figcaption">
-    <p style="font-weight: bold; text-transform: uppercase;">Contents</b>
-      <ol>
-        <li><a href="#successes">Things that Worked Well</a>
-          <ol>
-            <li><a href="#interfaces">Interfaces for Ideas</a></li>
-            <li><a href="#engagement">Engagement as a Spectrum</a></li>
-            <li><a href="#best-practices">Software Engineering Best Practices for Scientific Publishing</a></li>
-          </ol>
-        </li>
-        <li><a href="#challenges">Challenges & Improvements</a>
-          <ol>
-            <li><a href="#prize">The Distill Prize</a></li>
-            <li><a href="#small-community">A Small Community</a></li>
-            <li><a href="#review-process">Review Process</a></li>
-          </ol>
-        </li>
-        <li><a href="#other-changes">Other Changes</a>
-          <ol>
-            <li><a href="#dual-submission">Dual Submission Policy</a></li>
-            <li><a href="#authors">Supporting Authors</a></li>
-            <li><a href="#team">Growing Distill's Team</a></li>
-            <li><a href="#scope">Growing Distill's Scope</a></li>
-          </ol>
-        </li>
-      </ol>
+  <!-- <h4 style="text-transform: uppercase;">Contents</h4> -->
+  <div class="toc-wrapper base-grid figcaption">
+    <h4 style="text-transform: uppercase; grid-column: kicker; margin-top: 0;">Contents</h4>
+    <div class="toc">
+    <div>
+      <h4><a href="#successes">Things that Worked Well</a></h4>
+      <ul>
+        <li><a href="#interfaces">Interfaces for Ideas</a></li>
+        <li><a href="#engagement">Engagement as a Spectrum</a></li>
+        <li><a href="#best-practices">Software Engineering Best Practices for Scientific Publishing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><a href="#challenges">Challenges & Improvements</a></h4>
+      <ul>
+        <li><a href="#prize">The Distill Prize</a></li>
+        <li><a href="#small-community">A Small Community</a></li>
+        <li><a href="#review-process">Review Process</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4><a href="#other-changes">Other Changes</a></h4>
+      <ul>
+        <li><a href="#dual-submission">Dual Submission Policy</a></li>
+        <li><a href="#authors">Supporting Authors</a></li>
+        <li><a href="#team">Growing Distill's Team</a></li>
+        <li><a href="#scope">Growing Distill's Scope</a></li>
+      </ul>
+    </div>
+    </div>
+    
+    <img style="grid-column: gutter; width: 100%; max-width: 285px;" src="readers.jpg"/>
   </div>
   
   <div id="abstract">
