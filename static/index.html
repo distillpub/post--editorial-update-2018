@@ -1,22 +1,13 @@
 <!doctype html>
 <meta charset="utf-8">
 <head>
-  <script src="template.v2.js"></script>
+  <script src="https://distill.pub/template.v2.js"></script>
   <style>
     .article-link { font-style: italic; }
-    /* .toc > ol {padding-left: 0;}
-    .toc ol ol {
-      margin-top: 1em;
-      padding-left: 20px;
-      list-style-type: lower-roman;
-    }
-    .toc li {
-      margin-bottom: .5em;
-    } */
     .toc-wrapper {
-      padding: 1.5rem 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
     }
     .toc {
       grid-column: text;
@@ -26,6 +17,9 @@
       padding-left: 0;
     }
     @media (min-width: 768px) {
+      .toc-wrapper {
+        padding: 1.5rem 0;
+      }
       .toc {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -76,6 +70,22 @@
       border-bottom-style: solid;
       border-bottom-color: hsla(206, 90%, 20%, 0.7);
     }
+    .tag {
+      display: inline;
+      color: rgba(0,0,0,0.67);
+      padding: 0.3em 0.5em;
+      margin: 0;
+      margin-left: 2em;
+      font-size: 10px;
+      line-height: 1.4em;
+      border: 1px solid rgba(0,0,0,0.4);
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    d-byline .authors-affiliations {
+      display: none;
+    }
   </style>
 </head>
 <d-front-matter>
@@ -83,22 +93,28 @@
   {
     "title":"Distill Update 2018",
     "description":"",
-    "authors":[]
+    "authors":[{
+      "author": "Distill Editors",
+      "authorURL": "https://distill.pub/",
+      "affiliations": [
+        {"name": "Distill", "url": "https://distill.pub/"}
+      ]
+    }]
   }
   </script>
 </d-front-matter>
 
 <body>
   <d-title>
-    <h1>Distill Editorial Update</h1>
+    <h1>Distill Update 2018<span class="tag" alt="test">editorial</span></h1>
+    <!-- <p>An Update from the Editors </p> -->
   </d-title>
-  
-  <d-byline style="display: none;"></d-byline>
 
 <d-article>
   <!-- <h4 style="text-transform: uppercase;">Contents</h4> -->
   <div class="toc-wrapper base-grid figcaption">
-    <h4 style="text-transform: uppercase; grid-column: kicker; margin-top: 0;">Contents</h4>
+    <img style="grid-column: kicker; width: 100%; max-width: 285px;" src="readers.jpg"/>
+    
     <div class="toc">
     <div>
       <h4><a href="#successes">Things that Worked Well</a></h4>
@@ -127,7 +143,7 @@
     </div>
     </div>
     
-    <img style="grid-column: gutter; width: 100%; max-width: 285px;" src="readers.jpg"/>
+    <!-- <img style="grid-column: gutter; width: 100%; max-width: 285px;" src="readers.jpg"/> -->
   </div>
   
   <div id="abstract">
@@ -189,10 +205,10 @@
     <img src="continuum.svg" alt="Reading &harr; Interactive Diagrams &harr; In-browser Notebooks &harr; New Experiments" />
   </figure>
 
-  <p>The strongest example of this so far has been in the <a href="https://distill.pub/2018/building-blocks" class="article-link">Building Blocks of Interpretability</a>, where important ideas are not only accompanied by interactive diagrams, but then also by a notebook that can reproduce that diagram.</p>
+  <p>The strongest example of this so far has been in <a href="https://distill.pub/2018/building-blocks" class="article-link">Building Blocks of Interpretability</a>, where important ideas are not only accompanied by interactive diagrams, but then also by a notebook that can reproduce that diagram.</p>
   
   <span class="figcaption" style="grid-column: kicker; margin-top: 20px;">
-    <a class="figure-number" href="#figure-spectrum">2</a>
+    <a class="figure-number" href="#figure-spectrum">3</a>
   </span>
   <figure id="figure-spectrum">
     <img src="spectrum2.png" alt="" />
@@ -335,9 +351,14 @@
 
 </d-article>
 
-<d-appendix></d-appendix>
+<d-appendix>
+  
+  <h3>Acknowledgments</h3>
+  <p>
+     We are very grateful to Zan Armstrong—Zan gave in-depth written feedback on this update.
+  </p>
 
-<!-- <d-bibliography src="bibliography.bib"></d-bibliography> -->
+</d-appendix>
 
 <script src="index.bundle.js"></script>
 
