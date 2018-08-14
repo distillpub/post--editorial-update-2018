@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 704 91" style="enable-background:new 0 0 704 91;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FF7A00;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FF7A00;}
+	.st2{font-family:'Helvetica-Bold';}
+	.st3{font-size:24px;}
+</style>
+<g>
+	<g>
+		<line class="st0" x1="64.7" y1="66.1" x2="226.3" y2="66.1"/>
+		<g>
+			<polygon class="st1" points="70,72.7 71.1,71.5 65.3,66.1 71.1,60.8 70,59.6 63,66.1 			"/>
+		</g>
+		<g>
+			<polygon class="st1" points="221,72.7 219.9,71.5 225.7,66.1 219.9,60.8 221,59.6 228,66.1 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st0" x1="261.7" y1="66" x2="423.3" y2="66"/>
+		<g>
+			<polygon class="st1" points="267,72.5 268.1,71.4 262.3,66 268.1,60.6 267,59.5 260,66 			"/>
+		</g>
+		<g>
+			<polygon class="st1" points="418,72.5 416.9,71.4 422.7,66 416.9,60.6 418,59.5 425,66 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st0" x1="454.7" y1="66" x2="616.3" y2="66"/>
+		<g>
+			<polygon class="st1" points="460,72.5 461.1,71.4 455.3,66 461.1,60.6 460,59.5 453,66 			"/>
+		</g>
+		<g>
+			<polygon class="st1" points="611,72.5 609.9,71.4 615.7,66 609.9,60.6 611,59.5 618,66 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 22.2876 49.1514)" class="st2 st3">Reading</text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 208.7158 25.1514)"><tspan x="0" y="0" class="st2 st3">Interactive</tspan><tspan x="6.7" y="30.9" class="st2 st3">diagrams</tspan></text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 401.7764 25.1514)"><tspan x="0" y="0" class="st2 st3">In-browser</tspan><tspan x="0.7" y="30.9" class="st2 st3">notebooks</tspan></text>
+</g>
+<g>
+	<text transform="matrix(0.583 0 0 0.583 616.9824 25.1514)"><tspan x="0" y="0" class="st2 st3">New</tspan><tspan x="-47.4" y="30.9" class="st2 st3">Experiments</tspan></text>
+</g>
+<circle class="st1" cx="49.4" cy="66.1" r="6.2"/>
+<circle class="st1" cx="243.7" cy="66.1" r="6.2"/>
+<circle class="st1" cx="438" cy="66.1" r="6.2"/>
+<circle class="st1" cx="632.3" cy="66.1" r="6.2"/>
+</svg>
