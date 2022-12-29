@@ -14,15 +14,15 @@
     "url": "https://github.com/distillpub/post--update-2018/issues"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^4.5.1",
+    "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^5.1.1",
     "d3": "^5.1.0",
     "svelte": "1.64.1",
     "svelte-extras": "1.5.2",
-    "svelte-loader": "^2.8.1",
+    "svelte-loader": "^3.1.4",
     "uglifyjs-webpack-plugin": "^1.1.2",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.1.3"
   }
 }
